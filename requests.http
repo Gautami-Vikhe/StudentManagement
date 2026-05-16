@@ -1,0 +1,31 @@
+### Get All Students
+GET http://localhost:5228/api/students
+
+### Add New Student
+POST http://localhost:5228/api/students
+Content-Type: application/json
+
+{
+    "name": "Gautami Vikhe",
+    "email": "gautamivikhe09@gmail.com",
+    "phone": "9325519520",
+    "course": "MSc Computer Science"
+}
+
+### Get Student by ID
+GET http://localhost:5228/api/students/1
+
+### Update Student
+PUT http://localhost:5228/api/students/1
+Content-Type: application/json
+
+{
+    "id": 1,
+    "name": "Gautami Vikhe",
+    "email": "gautamivikhe09@gmail.com",
+    "phone": "9325519520",
+    "course": "MSc CS Updated"
+}
+
+### Delete Student
+DELETE http://localhost:5228/api/students/1
