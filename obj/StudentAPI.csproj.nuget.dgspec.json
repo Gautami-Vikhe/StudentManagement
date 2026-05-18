@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Lenovo\\OneDrive\\StudentManagement\\StudentAPI\\StudentAPI.csproj": {}
+    "C:\\Users\\Lenovo\\OneDrive\\StudentManagement\\StudentApp\\StudentAPI.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Lenovo\\OneDrive\\StudentManagement\\StudentAPI\\StudentAPI.csproj": {
+    "C:\\Users\\Lenovo\\OneDrive\\StudentManagement\\StudentApp\\StudentAPI.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Lenovo\\OneDrive\\StudentManagement\\StudentAPI\\StudentAPI.csproj",
+        "projectUniqueName": "C:\\Users\\Lenovo\\OneDrive\\StudentManagement\\StudentApp\\StudentAPI.csproj",
         "projectName": "StudentAPI",
-        "projectPath": "C:\\Users\\Lenovo\\OneDrive\\StudentManagement\\StudentAPI\\StudentAPI.csproj",
+        "projectPath": "C:\\Users\\Lenovo\\OneDrive\\StudentManagement\\StudentApp\\StudentAPI.csproj",
         "packagesPath": "C:\\Users\\Lenovo\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Lenovo\\OneDrive\\StudentManagement\\StudentAPI\\obj\\",
+        "outputPath": "C:\\Users\\Lenovo\\OneDrive\\StudentManagement\\StudentApp\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Lenovo\\AppData\\Roaming\\NuGet\\NuGet.Config"
