@@ -1,59 +1,33 @@
-# StudentApp
+# Student Management System - REST API
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 21.2.1.
+A RESTful Web API built with ASP.NET Core and SQL Server for managing student records.
 
-## Development server
+## Technologies Used
+- .NET 10
+- ASP.NET Core Web API
+- Entity Framework Core
+- SQL Server
+- C#
 
-To start a local development server, run:
+## Features
+- Get all students
+- Get student by ID
+- Add new student
+- Update student details
+- Delete student
 
-```bash
-ng serve
-```
+## API Endpoints
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
+| Method | Endpoint | Description |
+|--------|----------|-------------|
+| GET | /api/students | Get all students |
+| GET | /api/students/{id} | Get student by ID |
+| POST | /api/students | Add new student |
+| PUT | /api/students/{id} | Update student |
+| DELETE | /api/students/{id} | Delete student |
 
-## Code scaffolding
-
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
-
-```bash
-ng generate component component-name
-```
-
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
-
-```bash
-ng generate --help
-```
-
-## Building
-
-To build the project run:
-
-```bash
-ng build
-```
-
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
-
-## Running unit tests
-
-To execute unit tests with the [Vitest](https://vitest.dev/) test runner, use the following command:
-
-```bash
-ng test
-```
-
-## Running end-to-end tests
-
-For end-to-end (e2e) testing, run:
-
-```bash
-ng e2e
-```
-
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
-
-## Additional Resources
-
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+## How to Run
+1. Clone the repository
+2. Update connection string in `appsettings.json`
+3. Run `dotnet run` in the StudentAPI folder
+4. API will start on `http://localhost:5228`
