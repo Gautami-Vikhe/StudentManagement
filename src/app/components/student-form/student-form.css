@@ -1,0 +1,60 @@
+.container {
+  max-width: 500px;
+  margin: 30px auto;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+}
+
+h2 {
+  color: #2C5F8A;
+  margin-bottom: 20px;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+  color: #333;
+}
+
+input {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 14px;
+  box-sizing: border-box;
+}
+
+.buttons {
+  margin-top: 20px;
+}
+
+button {
+  background-color: #2C5F8A;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  margin-right: 10px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+button:hover {
+  background-color: #1a4a6e;
+}
+
+button.cancel {
+  background-color: #888;
+}
+
+button.cancel:hover {
+  background-color: #666;
+}
