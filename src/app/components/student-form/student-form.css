@@ -58,3 +58,9 @@ button.cancel {
 button.cancel:hover {
   background-color: #666;
 }
+.error{
+  color: red;
+  font-size: 12px;
+  margin-top: 4px;
+  display: block;
+}

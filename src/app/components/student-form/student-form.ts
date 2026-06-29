@@ -1,4 +1,4 @@
-import { Component,OnInit } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
 import { ActivatedRoute, Router } from '@angular/router';
@@ -7,11 +7,13 @@ import { StudentService } from '../../services/student';
 
 @Component({
   selector: 'app-student-form',
+  standalone: true,
   imports: [CommonModule, FormsModule],
   templateUrl: './student-form.html',
-  styleUrl: './student-form.css',
+  styleUrl: './student-form.css'
 })
 export class StudentForm implements OnInit {
+
   student: Student = {
     name: '',
     email: '',
@@ -21,6 +23,7 @@ export class StudentForm implements OnInit {
 
   isEditMode = false;
   studentId!: number;
+  submitted = false;
 
   constructor(
     private studentService: StudentService,
@@ -39,10 +42,16 @@ export class StudentForm implements OnInit {
   }
 
   saveStudent(): void {
+    this.submitted = true;
+
+    if (!this.student.name || !this.student.email) {
+      return;
+    }
+
     if (this.isEditMode) {
       this.studentService.updateStudent(this.studentId, this.student).subscribe({
         next: () => {
-          this.router.navigateByUrl('/', {skipLocationChange: true}).then(() => {
+          this.router.navigateByUrl('/', { skipLocationChange: true }).then(() => {
             this.router.navigate(['/students']);
           });
         },
@@ -51,7 +60,7 @@ export class StudentForm implements OnInit {
     } else {
       this.studentService.addStudent(this.student).subscribe({
         next: () => {
-          this.router.navigateByUrl('/', {skipLocationChange: true}).then(() => {
+          this.router.navigateByUrl('/', { skipLocationChange: true }).then(() => {
             this.router.navigate(['/students']);
           });
         },
