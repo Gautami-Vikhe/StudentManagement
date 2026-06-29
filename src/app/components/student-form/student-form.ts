@@ -40,12 +40,22 @@ export class StudentForm implements OnInit {
 
   saveStudent(): void {
     if (this.isEditMode) {
-      this.studentService.updateStudent(this.studentId, this.student).subscribe(() => {
-        this.router.navigate(['/students']);
+      this.studentService.updateStudent(this.studentId, this.student).subscribe({
+        next: () => {
+          this.router.navigateByUrl('/', {skipLocationChange: true}).then(() => {
+            this.router.navigate(['/students']);
+          });
+        },
+        error: (err) => console.error(err)
       });
     } else {
-      this.studentService.addStudent(this.student).subscribe(() => {
-        this.router.navigate(['/students']);
+      this.studentService.addStudent(this.student).subscribe({
+        next: () => {
+          this.router.navigateByUrl('/', {skipLocationChange: true}).then(() => {
+            this.router.navigate(['/students']);
+          });
+        },
+        error: (err) => console.error(err)
       });
     }
   }
